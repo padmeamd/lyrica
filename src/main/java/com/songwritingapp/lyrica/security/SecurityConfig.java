@@ -1,4 +1,4 @@
-package com.songwritingapp.lyricaApp.security;
+package com.songwritingapp.lyrica.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

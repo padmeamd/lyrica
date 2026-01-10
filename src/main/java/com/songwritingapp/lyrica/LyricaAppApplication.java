@@ -1,4 +1,4 @@
-package com.songwritingapp.lyricaApp;
+package com.songwritingapp.lyrica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

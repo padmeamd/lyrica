@@ -1,4 +1,4 @@
-package com.songwritingapp.lyricaApp;
+package com.songwritingapp.lyrica;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
