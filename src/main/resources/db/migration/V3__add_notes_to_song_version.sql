@@ -1,0 +1,2 @@
+ALTER TABLE song_version
+    ADD COLUMN IF NOT EXISTS notes text NOT NULL DEFAULT '';
