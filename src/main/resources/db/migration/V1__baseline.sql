@@ -1,0 +1,2 @@
+-- Baseline migration
+-- Tables will be added in Step 3 (users, songs, song_versions, collections)

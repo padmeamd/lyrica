@@ -1,0 +1,75 @@
+#######################################
+# Maven
+#######################################
+target/
+*.log
+
+#######################################
+# Maven Wrapper (should be committed)
+#######################################
+# DO NOT ignore maven-wrapper.jar
+# .mvn/wrapper/maven-wrapper.jar
+
+#######################################
+# IDEs
+#######################################
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+#######################################
+# OS
+#######################################
+.DS_Store
+Thumbs.db
+
+#######################################
+# Environment / Secrets
+#######################################
+.env
+.env.*
+*.pem
+*.key
+
+#######################################
+# Docker
+#######################################
+docker-data/
+**/docker-data/
+
+#######################################
+# Test & Coverage
+#######################################
+coverage/
+*.lcov
+*.coverage
+
+#######################################
+# Misc
+#######################################
+*.tmp
+*.swp
+*.bak

@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:16
+    container_name: lyrica-db
+    environment:
+      POSTGRES_DB: songwriting
+      POSTGRES_USER: songwriting
+      POSTGRES_PASSWORD: songwriting
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: lyrica-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  pgdata:
+  ollama:
