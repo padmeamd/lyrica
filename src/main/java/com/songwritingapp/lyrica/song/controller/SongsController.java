@@ -19,7 +19,6 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/songs")
 @RequiredArgsConstructor
-
 public class SongsController {
     private final SongService songService;
     private final SongQueryService songQueryService;
@@ -32,12 +31,12 @@ public class SongsController {
         return songService.createSong(ownerId, request);
     }
 
-    @GetMapping("/api/songs")
+    @GetMapping
     public List<SongListItemDTO> listSongs() {
         return songQueryService.listSongs(CurrentUser.id());
     }
 
-    @GetMapping("/api/songs/{id}")
+    @GetMapping("/{id}")
     public SongDetailDTO getSong(@PathVariable UUID id) {
         return songQueryService.getSong(CurrentUser.id(), id);
     }

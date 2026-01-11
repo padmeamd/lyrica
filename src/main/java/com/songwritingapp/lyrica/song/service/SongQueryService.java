@@ -24,7 +24,7 @@ public class SongQueryService {
 
     @Transactional(readOnly = true)
     public List<SongListItemDTO> listSongs(UUID ownerId) {
-        return songRepository.findAllByOwnerIdAndDeletedAtIsNullOrder(ownerId)
+        return songRepository.findAllByOwnerIdAndDeletedAtIsNullOrderByCreatedAtDesc(ownerId)
                 .stream()
                 .map(s -> new SongListItemDTO(s.getId(), s.getTitle(), s.getStatus(), s.getUpdatedAt()))
                 .toList();

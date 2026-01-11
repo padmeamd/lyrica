@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface SongRepository extends JpaRepository<Song, UUID> {
 
-    List<Song> findAllByOwnerIdAndDeletedAtIsNullOrder(UUID ownerId);
+    List<Song> findAllByOwnerIdAndDeletedAtIsNullOrderByCreatedAtDesc(UUID ownerId);
 
     Optional<Song> findByIdAndOwnerIdAndDeletedAtIsNull(UUID id, UUID ownerId);
 }
